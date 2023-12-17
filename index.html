@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>World of Dhanvantari</title>
+</head>
+<body>
+    <div class="wod">
+        <div class="what">
+            <u>VISION</u>
+            <div class="vision">To revolutionize healthcare with AI, enabling accurate diagnoses, improved treatments, and a healthier future for everyone</div>
+   
+        </div>
+        <div class="text">
+            <div class="t">
+                WOD
+            </div>
+        </div>
+        <div class="text2">
+            <u>MISSION</u><br>
+
+            Developing and deploying AI powered tools for accessible and accurate diagnosis of common skin diseases, empowering patients to seek early treatment.
+
+        </div>
+         </div>
+         <div class="goals">
+            <u>GOALS</u><br>
+            <ul>
+
+           <li> Develop and launch an AI-powered skin disease diagnosis app with 80% accuracy by December 2024.</li>
+<li>Secure partnership with 10 dermatologists in Kolkata to test and implement the app by March 2025.</li>
+<li>Expand AI applications to diagnose diabetes with 95% accuracy by 2027.</li>
+</ul>
+         </div>
+
+         <script>
+    // Number of circles you want
+    const numberOfCircles = 15;
+
+    // Create circles dynamically
+    for (let i = 0; i < numberOfCircles; i++) {
+      createCircle();
+    }
+
+    function createCircle() {
+      const circle = document.createElement('div');
+      circle.className = 'golden-circle';
+        
+      // Randomize initial position
+      const initialX = Math.random() * window.innerWidth;
+      const initialY = Math.random() * window.innerHeight;
+
+      // Set initial position
+      circle.style.transform = `translate(${initialX}px, ${initialY}px)`;
+     circle.animate
+      // Append circle to the body
+     
+      const keyframes = [
+      { transform: `translate(${initialX}px, ${initialY}px)` },
+      { transform: `translate(${Math.random() * window.innerWidth}px, ${Math.random() * window.innerHeight}px)` },
+      
+      { transform: `translate(${Math.random() * window.innerWidth}px, ${Math.random() * window.innerHeight}px)` },
+      
+      { transform: `translate(${Math.random() * window.innerWidth}px, ${Math.random() * window.innerHeight}px)` }
+    ];
+
+    const options = {
+      duration: 3000,   // 3 seconds for one cycle
+      iterations: Infinity,
+      direction: 'alternate-reverse'  // Repeat indefinitely
+    };
+
+    // Create the animation
+    const animation = circle.animate(keyframes, options);
+    document.body.appendChild(circle);
+    animation.play()
+    }
+  </script>
+</body>
+</html>
