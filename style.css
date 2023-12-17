@@ -110,16 +110,16 @@ u {
     }
     .text{
         top:0%;
-        height:30vh;
-        width:30vh;
+        height:40vh;
+        width:40vh;
       
     }
     .t{
         font-size: larger;
     }
     .text::before{
-        height:30vh;
-        width:30vh;
+        height:40vh;
+        width:40vh;
     }
     .wod>div{
         flex:100%;
