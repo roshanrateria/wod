@@ -1,0 +1,130 @@
+body{
+    background-image: repeating-linear-gradient(blue,blueviolet,violet);
+}
+.wod{
+    
+    width: 100vw;
+    display: flex;
+    height:80vh;
+}
+.text{
+    aspect-ratio: 1 / 1;
+    position:relative;
+    display:inline;
+    background-color: transparent;
+    border:5px solid white;
+    border-radius: 30vw;
+    
+    left:0%;
+    top:20%;
+    
+}
+
+@keyframes r {
+    0% {transform: rotate(0deg); border-top:10px solid blue;}
+    50% {transform: rotate(180deg); border-top:10px solid blueviolet;}
+    100% {transform: rotate(360deg); border-top:10px solid violet;}
+}
+
+.text::before{
+    border-top:10px solid blue;
+    position: absolute;
+    content: '';
+    display:inline;
+    top:-5px;
+    aspect-ratio: 1 / 1;
+    width:100%;
+    border-radius: 30vw;
+    animation: r 1s linear infinite;
+}
+.t{
+    color:gold;
+    text-shadow: -10px -1px 20px goldenrod;
+    text-align: center;
+    font-size: 9vw;
+    border-radius: 50%;
+    position: relative;
+    padding:10px;
+    top:30%;
+}
+.what{
+    text-align: left;
+    position: relative;
+    padding:10px;
+    top:10%;
+    width: 35vw;
+    text-align: center;
+    left:1%;
+    font-size: 2vw;
+    color:gold;
+    text-shadow: 1px 1px 2px goldenrod;
+    border-radius: 50%;
+}
+.text2{
+    text-align: left;
+    position: relative;
+    padding:10px;
+    top:10%;
+    width: 35vw;
+    text-align: center;
+    left:1%;
+    font-size: 2vw;
+    color:gold;
+    text-shadow: 1px 1px 2px goldenrod;
+    border-radius: 50%;
+}
+.goals{
+    text-align: center;
+    font-size: 2vw;
+    color:gold;
+    text-shadow: 1px 1px 2px goldenrod;
+    border-radius: 50%;
+    padding: 10%;
+}
+ul{
+    list-style-position: inside;
+}
+
+u {
+    text-decoration:wavy underline;
+  }
+  
+  .golden-circle {
+    width: 10px;
+    height: 10px;
+    background-color: gold;
+    border-radius: 50%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -1;
+    box-shadow: 0 0 10px goldenrod;
+  }
+
+
+  @media (max-width: 800px) {
+    .wod {
+      flex-direction: column;
+      align-items: center;
+      height: 125vh;
+    }
+    .text{
+        top:0%;
+        aspect-ratio: 1 / 1;
+      
+    }
+   
+    .text::before{
+        aspect-ratio: 1 / 1;
+    }
+    .wod>div{
+        flex:100%;
+    }
+    .what,.goals,.text2{
+        display: block;
+        position:static;
+       font-size: large;
+    }
+  }
+  
+  
