@@ -126,5 +126,11 @@ u {
        font-size: large;
     }
   }
+
+  @media (max-width: 500px){
+    .wod>div{
+        flex:auto;
+    }
+  }
   
   
