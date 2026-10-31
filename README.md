@@ -1,17 +1,12 @@
 # wod
 
-## Overview
-
-A FrontEnd project
+A frontend web project implemented as a static page with a stylesheet and logo asset.
 
 ## Technology
 
-HTML, CSS
+- HTML
+- CSS
 
-## Repository contents
+## Run
 
-`index.html`, `logo.png`, `style.css`
-
-## Notes
-
-This README documents the repository using metadata and files visible in the repository. See the source tree for the current implementation.
+Open `index.html` in a browser or serve the repository with any static web server.
